@@ -1,0 +1,87 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/Lab2/TestBench/dec/simulation/modelsim
+vdec
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1639794079
+!i10b 1
+!s100 1dO4iQe_kA3UH?1e3HL@Y0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I]KJefJWUG5m]9DOPVKXJj0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1639794012
+8D:/FPGA/Lab2/HDL/dec.sv
+FD:/FPGA/Lab2/HDL/dec.sv
+!i122 1
+L0 1 136
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1639794079.000000
+!s107 D:/FPGA/Lab2/HDL/dec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/FPGA/Lab2/HDL|D:/FPGA/Lab2/HDL/dec.sv|
+!i113 1
+Z7 o-sv -work work
+!s92 -sv -work work +incdir+D:/FPGA/Lab2/HDL
+Z8 tCvgOpt 0
+vdec_tb
+R1
+!s110 1639794080
+!i10b 1
+!s100 4oNSOHFKWFgM?=BE6EdAi3
+R3
+I>3@AFnNNGojX:XoULQ7La0
+R4
+S1
+R0
+w1639775521
+8D:/FPGA/Lab2/TestBench/dec/dec_tb.sv
+FD:/FPGA/Lab2/TestBench/dec/dec_tb.sv
+!i122 2
+L0 3 126
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/FPGA/Lab2/TestBench/dec/dec_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/FPGA/Lab2/TestBench/dec|D:/FPGA/Lab2/TestBench/dec/dec_tb.sv|
+!i113 1
+R7
+!s92 -sv -work work +incdir+D:/FPGA/Lab2/TestBench/dec
+R8
+vperiodram
+R2
+!i10b 1
+!s100 7K0Oh3<Qg@0H8NhAMlFIH1
+R3
+IGBCNJ`lR8oIMRzB1K_@CU2
+R4
+R0
+w1639793130
+8D:/FPGA/Lab2/HDL/IP/periodram.v
+FD:/FPGA/Lab2/HDL/IP/periodram.v
+!i122 0
+L0 40 75
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/FPGA/Lab2/HDL/IP/periodram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA/Lab2/HDL/IP|D:/FPGA/Lab2/HDL/IP/periodram.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/FPGA/Lab2/HDL/IP
+R8
