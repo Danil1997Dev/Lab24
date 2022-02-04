@@ -7,7 +7,7 @@ module dec_tb();
 	logic r, y, g;
     logic [1:0] div;
 	logic ctl_wr, ctl_rd;
-	logic ctl_addr;
+	logic [1:0] ctl_addr;
 	logic [31:0] ctl_wrdata;
 	logic [31:0] ctl_rddata;
 	logic ram_wr;
@@ -56,6 +56,7 @@ module dec_tb();
 		begin
             repeat (10) @(posedge clk);
 			train=1;
+			read_reg_transaction(2'b11,read_data);
             repeat (4) @(posedge clk);
 			train=0;
            			read_reg_transaction(2'b11,read_data);
