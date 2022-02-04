@@ -13,7 +13,6 @@ module dec_tb();
 	logic ram_wr;
 	logic [1:0] ram_addr;
 	logic [31:0] ram_wrdata;
-	logic [31:0] read_data;
 
     logic [31:0] divisor[3:0] = {
         {8'd10, 8'd70, 8'd50, 8'd20},
@@ -58,7 +57,7 @@ module dec_tb();
 			train=1;
             repeat (4) @(posedge clk);
 			train=0;
-           			read_reg_transaction(2'b11,read_data);
+           			read_reg_transaction(2'b11);
 			wait ({r,y,g}==3'b001);
             repeat (10) @(posedge clk);
             write_reg_transaction(1,div); 

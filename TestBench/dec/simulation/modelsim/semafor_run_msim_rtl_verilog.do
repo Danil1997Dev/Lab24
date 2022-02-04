@@ -5,10 +5,10 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+D:/FPGA/Lab2/HDL/IP {D:/FPGA/Lab2/HDL/IP/periodram.v}
-vlog -sv -work work +incdir+D:/FPGA/Lab2/HDL {D:/FPGA/Lab2/HDL/dec.sv}
+vlog -vlog01compat -work work +incdir+D:/intelFPGA/18.1/Lab2Store/Lab24/HDL/IP {D:/intelFPGA/18.1/Lab2Store/Lab24/HDL/IP/periodram.v}
+vlog -sv -work work +incdir+D:/intelFPGA/18.1/Lab2Store/Lab24/HDL {D:/intelFPGA/18.1/Lab2Store/Lab24/HDL/dec.sv}
 
-vlog -sv -work work +incdir+D:/FPGA/Lab2/TestBench/dec {D:/FPGA/Lab2/TestBench/dec/dec_tb.sv}
+vlog -sv -work work +incdir+D:/intelFPGA/18.1/Lab2Store/Lab24/TestBench/dec {D:/intelFPGA/18.1/Lab2Store/Lab24/TestBench/dec/dec_tb.sv}
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  dec_tb
 
