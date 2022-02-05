@@ -19,6 +19,7 @@ int main()
 	int i,j;
 	volatile alt_u32 *p;
 	alt_u32 tmp;
+	alt_u32 rd;
 
 
 	//program divisors
@@ -41,8 +42,12 @@ int main()
 
 	IOWR_ALTERA_AVALON_SEM_DIVSET(SEM_CTL_SLAVE_BASE,0x00);
 	IOWR_ALTERA_AVALON_SEM_CTL(SEM_CTL_SLAVE_BASE,0x01);
-	IORD_ALTERA_AVALON_SEM_DIVISOR(SEM_CTL_SLAVE_BASE);
 
+	for (j=0; j<500; j++)
+	{
+	IORD_ALTERA_AVALON_SEM_DIVISOR(SEM_CTL_SLAVE_BASE);
+	//printf((alt_u32)rd);
+	};
 	
 	while (1)
 	{

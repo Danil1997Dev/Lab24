@@ -251,3 +251,178 @@ Info: Building ../Lab2_bsp/
 K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
 [BSP build complete]
 [RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:35:55 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+Info: Compiling sem.c to obj/default/sem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_bsp//HAL/inc -I../Lab2_bsp/ -I../Lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SIM_OPTIMIZE -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/sem.o sem.c
+sem.c: In function 'main':
+sem.c:39:2: warning: implicit declaration of function 'alt_dcache_flush' [-Wimplicit-function-declaration]
+  alt_dcache_flush();
+  ^
+sem.c:52:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("rd\n",rd);
+          ^
+sem.c:52:10: warning: too many arguments for format [-Wformat-extra-args]
+Info: Linking RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf
+nios2-elf-g++  -T'../Lab2_bsp//linker.x' -msys-crt0='../Lab2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_bsp/  -msmallc  -Wl,-Map=RUN_ON_HDL_SIMULATOR_ONLY_Lab2.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf obj/default/sem.o -lm -msys-lib=m
+nios2-elf-insert RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name niosII --quartus_project_dir "D:/intelFPGA/18.1/Lab2Store/Lab24/Top" --jdi ../..//output_files/Lab2.jdi --sopcinfo D:/intelFPGA/18.1/Lab2Store/Lab24/Top/software_new/Lab2_bsp/../../niosII.sopcinfo
+Info: (RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf) 16 KBytes program size (code + initialized data).
+Info:                                      106 KBytes free for stack + heap.
+Info: Creating RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf >RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:36:00 **** Incremental Build of configuration Nios II for project Lab2_bsp ****
+make all 
+[BSP build complete]
+00:37:18 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+Info: Compiling sem.c to obj/default/sem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_bsp//HAL/inc -I../Lab2_bsp/ -I../Lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SIM_OPTIMIZE -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/sem.o sem.c
+sem.c: In function 'main':
+sem.c:39:2: warning: implicit declaration of function 'alt_dcache_flush' [-Wimplicit-function-declaration]
+  alt_dcache_flush();
+  ^
+sem.c:49:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("rd\n",rd);
+         ^
+sem.c:49:9: warning: too many arguments for format [-Wformat-extra-args]
+Info: Linking RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf
+nios2-elf-g++  -T'../Lab2_bsp//linker.x' -msys-crt0='../Lab2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_bsp/  -msmallc  -Wl,-Map=RUN_ON_HDL_SIMULATOR_ONLY_Lab2.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf obj/default/sem.o -lm -msys-lib=m
+nios2-elf-insert RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name niosII --quartus_project_dir "D:/intelFPGA/18.1/Lab2Store/Lab24/Top" --jdi ../..//output_files/Lab2.jdi --sopcinfo D:/intelFPGA/18.1/Lab2Store/Lab24/Top/software_new/Lab2_bsp/../../niosII.sopcinfo
+Info: (RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf) 16 KBytes program size (code + initialized data).
+Info:                                      106 KBytes free for stack + heap.
+Info: Creating RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf >RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:37:22 **** Incremental Build of configuration Nios II for project Lab2_bsp ****
+make all 
+[BSP build complete]
+00:38:31 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+Info: Compiling sem.c to obj/default/sem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_bsp//HAL/inc -I../Lab2_bsp/ -I../Lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SIM_OPTIMIZE -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/sem.o sem.c
+sem.c: In function 'main':
+sem.c:39:2: warning: implicit declaration of function 'alt_dcache_flush' [-Wimplicit-function-declaration]
+  alt_dcache_flush();
+  ^
+sem.c:49:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("rd\n",(alt_u32)rd);
+         ^
+sem.c:49:9: warning: too many arguments for format [-Wformat-extra-args]
+Info: Linking RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf
+nios2-elf-g++  -T'../Lab2_bsp//linker.x' -msys-crt0='../Lab2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_bsp/  -msmallc  -Wl,-Map=RUN_ON_HDL_SIMULATOR_ONLY_Lab2.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf obj/default/sem.o -lm -msys-lib=m
+nios2-elf-insert RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name niosII --quartus_project_dir "D:/intelFPGA/18.1/Lab2Store/Lab24/Top" --jdi ../..//output_files/Lab2.jdi --sopcinfo D:/intelFPGA/18.1/Lab2Store/Lab24/Top/software_new/Lab2_bsp/../../niosII.sopcinfo
+Info: (RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf) 16 KBytes program size (code + initialized data).
+Info:                                      106 KBytes free for stack + heap.
+Info: Creating RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf >RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:38:36 **** Incremental Build of configuration Nios II for project Lab2_bsp ****
+make all 
+[BSP build complete]
+00:40:07 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+Info: Compiling sem.c to obj/default/sem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_bsp//HAL/inc -I../Lab2_bsp/ -I../Lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SIM_OPTIMIZE -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/sem.o sem.c
+sem.c: In function 'main':
+sem.c:39:2: warning: implicit declaration of function 'alt_dcache_flush' [-Wimplicit-function-declaration]
+  alt_dcache_flush();
+  ^
+sem.c:49:9: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+  printf((alt_u32)rd);
+         ^
+In file included from k:\intelfpga_lite\18.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:29:0,
+                 from sem.c:1:
+k:\intelfpga_lite\18.1\nios2eds\bin\gnu\h-x86_64-mingw32\nios2-elf\include\stdio.h:215:5: note: expected 'const char * restrict' but argument is of type 'long unsigned int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+Info: Linking RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf
+nios2-elf-g++  -T'../Lab2_bsp//linker.x' -msys-crt0='../Lab2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_bsp/  -msmallc  -Wl,-Map=RUN_ON_HDL_SIMULATOR_ONLY_Lab2.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf obj/default/sem.o -lm -msys-lib=m
+nios2-elf-insert RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name niosII --quartus_project_dir "D:/intelFPGA/18.1/Lab2Store/Lab24/Top" --jdi ../..//output_files/Lab2.jdi --sopcinfo D:/intelFPGA/18.1/Lab2Store/Lab24/Top/software_new/Lab2_bsp/../../niosII.sopcinfo
+Info: (RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf) 16 KBytes program size (code + initialized data).
+Info:                                      106 KBytes free for stack + heap.
+Info: Creating RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf >RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:40:10 **** Incremental Build of configuration Nios II for project Lab2_bsp ****
+make all 
+[BSP build complete]
+00:40:22 **** Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:40:25 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:40:26 **** Incremental Build of configuration Nios II for project Lab2_bsp ****
+make all 
+[BSP build complete]
+00:40:27 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:45:30 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+Info: Compiling sem.c to obj/default/sem.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Lab2_bsp//HAL/inc -I../Lab2_bsp/ -I../Lab2_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_SIM_OPTIMIZE -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/sem.o sem.c
+sem.c: In function 'main':
+sem.c:39:2: warning: implicit declaration of function 'alt_dcache_flush' [-Wimplicit-function-declaration]
+  alt_dcache_flush();
+  ^
+sem.c:22:10: warning: unused variable 'rd' [-Wunused-variable]
+  alt_u32 rd;
+          ^
+Info: Linking RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf
+nios2-elf-g++  -T'../Lab2_bsp//linker.x' -msys-crt0='../Lab2_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Lab2_bsp/  -msmallc  -Wl,-Map=RUN_ON_HDL_SIMULATOR_ONLY_Lab2.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf obj/default/sem.o -lm -msys-lib=m
+nios2-elf-insert RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name niosII --quartus_project_dir "D:/intelFPGA/18.1/Lab2Store/Lab24/Top" --jdi ../..//output_files/Lab2.jdi --sopcinfo D:/intelFPGA/18.1/Lab2Store/Lab24/Top/software_new/Lab2_bsp/../../niosII.sopcinfo
+Info: (RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf) 14 KBytes program size (code + initialized data).
+Info:                                      108 KBytes free for stack + heap.
+Info: Creating RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source RUN_ON_HDL_SIMULATOR_ONLY_Lab2.elf >RUN_ON_HDL_SIMULATOR_ONLY_Lab2.objdump
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:45:33 **** Incremental Build of configuration Nios II for project Lab2_bsp ****
+make all 
+[BSP build complete]
+00:45:47 **** Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:45:49 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]
+00:45:50 **** Incremental Build of configuration Nios II for project Lab2_bsp ****
+make all 
+[BSP build complete]
+00:45:52 **** Incremental Build of configuration Nios II for project Lab2 ****
+make all 
+Info: Building ../Lab2_bsp/
+K:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Lab2_bsp/
+[BSP build complete]
+[RUN_ON_HDL_SIMULATOR_ONLY_Lab2 build complete]

@@ -15,7 +15,7 @@ module dec_tb();
 	logic [31:0] ram_wrdata;
 	logic [31:0] read_data;
 
-    logic [31:0] divisor[3:0] = {
+    logic [31:0] divisor[0:3] = {
         {8'd10, 8'd70, 8'd50, 8'd20},
         {8'd10, 8'd30, 8'd40, 8'd30},
         {8'd10, 8'd30, 8'd10, 8'd100},
